@@ -31,16 +31,18 @@ namespace LR5_s8.UsersClasses
         public StringPair EmailAdressTo { get; set; }
         public string Subject { get; set; }
         public string Body { get; set; }
-        public class StringPair
+        
+    }
+    public class StringPair
+    {
+        public StringPair(string emailAdress, string name)
         {
-            public StringPair(string emailAdress, string name)
-            {
-                EmailAdress = string.IsNullOrWhiteSpace(emailAdress) ?
-                    throw new Exception("Нельзя вставлять пробелы или пустые значения!") : emailAdress;
-                Name = String.IsNullOrWhiteSpace(name) ?
-                    throw new Exception("Нельзя вставлять пробелы или пустые значения!") : name;
-            }
-            public string EmailAdress { get; set; } public string Name { get; set; }
+            EmailAdress = string.IsNullOrWhiteSpace(emailAdress) ?
+                throw new Exception("Нельзя вставлять пробелы или пустые значения!") : emailAdress;
+            Name = String.IsNullOrWhiteSpace(name) ?
+                throw new Exception("Нельзя вставлять пробелы или пустые значения!") : name;
         }
+        public string EmailAdress { get; set; }
+        public string Name { get; set; }
     }
 }

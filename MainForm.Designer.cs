@@ -116,10 +116,10 @@
             // textBoxEmail
             // 
             this.textBoxEmail.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxEmail.Location = new System.Drawing.Point(195, 209);
+            this.textBoxEmail.Location = new System.Drawing.Point(193, 209);
             this.textBoxEmail.Multiline = true;
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(371, 47);
+            this.textBoxEmail.Size = new System.Drawing.Size(373, 47);
             this.textBoxEmail.TabIndex = 6;
             // 
             // textBoxName
@@ -159,6 +159,7 @@
             this.buttonSend.TabIndex = 10;
             this.buttonSend.Text = "Отправить";
             this.buttonSend.UseVisualStyleBackColor = true;
+            this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
             // 
             // MainForm
             // 
@@ -178,6 +179,7 @@
             this.Controls.Add(this.label1);
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
