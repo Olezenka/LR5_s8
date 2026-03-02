@@ -82,7 +82,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(608, 209);
+            this.label4.Location = new System.Drawing.Point(643, 209);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 56);
             this.label4.TabIndex = 3;
@@ -119,16 +119,16 @@
             this.textBoxEmail.Location = new System.Drawing.Point(193, 209);
             this.textBoxEmail.Multiline = true;
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(373, 47);
+            this.textBoxEmail.Size = new System.Drawing.Size(444, 47);
             this.textBoxEmail.TabIndex = 6;
             // 
             // textBoxName
             // 
             this.textBoxName.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxName.Location = new System.Drawing.Point(723, 206);
+            this.textBoxName.Location = new System.Drawing.Point(758, 206);
             this.textBoxName.Multiline = true;
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(345, 47);
+            this.textBoxName.Size = new System.Drawing.Size(391, 47);
             this.textBoxName.TabIndex = 7;
             // 
             // textBoxSubject
@@ -137,7 +137,7 @@
             this.textBoxSubject.Location = new System.Drawing.Point(241, 296);
             this.textBoxSubject.Multiline = true;
             this.textBoxSubject.Name = "textBoxSubject";
-            this.textBoxSubject.Size = new System.Drawing.Size(827, 47);
+            this.textBoxSubject.Size = new System.Drawing.Size(908, 47);
             this.textBoxSubject.TabIndex = 8;
             // 
             // textBoxBody
@@ -146,7 +146,7 @@
             this.textBoxBody.Location = new System.Drawing.Point(58, 441);
             this.textBoxBody.Multiline = true;
             this.textBoxBody.Name = "textBoxBody";
-            this.textBoxBody.Size = new System.Drawing.Size(1010, 349);
+            this.textBoxBody.Size = new System.Drawing.Size(1091, 349);
             this.textBoxBody.TabIndex = 9;
             this.textBoxBody.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -165,7 +165,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1110, 915);
+            this.ClientSize = new System.Drawing.Size(1195, 915);
             this.Controls.Add(this.buttonSend);
             this.Controls.Add(this.textBoxBody);
             this.Controls.Add(this.textBoxSubject);

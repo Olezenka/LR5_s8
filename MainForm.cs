@@ -19,8 +19,8 @@ namespace LR5_s8
         public MainForm()
         {
             InitializeComponent();
-            textBoxEmail.Text = "task_code_development@list.ru";
-            textBoxName.Text = "Антон Игоревечи";
+            textBoxEmail.Text = "olezasinnicyn@mail.ru";
+            textBoxName.Text = "Вещий Олег";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -42,8 +42,8 @@ namespace LR5_s8
             }
 
             string smtp = "smtp.mail.ru";
-            StringPair fromInfo = new StringPair("почта", "ФИО Студента");
-            string password = "пароль";
+            StringPair fromInfo = new StringPair(textBoxEmail.Text, textBoxName.Text);
+            string password = "bosOvHLbCBVs0i4ZeDI5";
 
             StringPair toInfo = new StringPair(textBoxEmail.Text, textBoxName.Text);
             string subject = textBoxSubject.Text;
