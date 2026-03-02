@@ -42,7 +42,7 @@ namespace LR5_s8
             }
 
             string smtp = "smtp.mail.ru";
-            StringPair fromInfo = new StringPair(textBoxEmail.Text, textBoxName.Text);
+            StringPair fromInfo = new StringPair("olezasinnicyn@mail.ru", "Вещий Олег");
             string password = "bosOvHLbCBVs0i4ZeDI5";
 
             StringPair toInfo = new StringPair(textBoxEmail.Text, textBoxName.Text);

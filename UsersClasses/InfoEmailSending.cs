@@ -7,40 +7,49 @@ using System.Threading.Tasks;
 
 namespace LR5_s8.UsersClasses
 {
-    internal class InfoEmailSending
+    public class InfoEmailSending
     {
         public InfoEmailSending(string smtpClientAdress,
-            StringPair emailAdressFrom,
-            string emailPassword,
-            StringPair emailAdressTo,
-            string subject,
-            string body)
+     StringPair emailAdressFrom,
+     string emailPassword,
+     StringPair emailAdressTo,
+     string subject,
+     string body)
         {
-            SmtpClientAdress = String.IsNullOrWhiteSpace(smtpClientAdress) ?
-                 throw new Exception("Нельзя вставлять пробелы или пустые значения!") : smtpClientAdress;
+            smtpClientAdress = String.IsNullOrWhiteSpace(smtpClientAdress) ?
+                throw new Exception("Нех вставлять пробелы или пустоту") :
+                smtpClientAdress;
+
+            SmtpClientAdress = smtpClientAdress;
+
             EmailAdressFrom = emailAdressFrom ?? throw new ArgumentNullException(nameof(emailAdressFrom));
             EmailPassword = String.IsNullOrWhiteSpace(emailPassword) ?
-                 throw new Exception("Нельзя вставлять пробелы или пустые значения!") : emailPassword;
-            EmailAdressTo = emailAdressFrom ?? throw new ArgumentNullException(nameof(emailAdressTo));
+                 throw new Exception("иди на") :
+                 emailPassword;
+            EmailAdressTo = emailAdressTo ?? throw new ArgumentNullException(nameof(emailAdressTo));
             Subject = subject ?? throw new ArgumentNullException(nameof(subject));
-            Body = body ?? throw new ArgumentNullException(body);
+            Body = body ?? throw new ArgumentNullException(nameof(body));
         }
+
         public string SmtpClientAdress { get; set; }
         public StringPair EmailAdressFrom { get; set; }
         public string EmailPassword { get; set; }
         public StringPair EmailAdressTo { get; set; }
         public string Subject { get; set; }
         public string Body { get; set; }
-        
+
+
     }
     public class StringPair
     {
         public StringPair(string emailAdress, string name)
         {
-            EmailAdress = string.IsNullOrWhiteSpace(emailAdress) ?
-                throw new Exception("Нельзя вставлять пробелы или пустые значения!") : emailAdress;
+            EmailAdress = String.IsNullOrWhiteSpace(emailAdress) ?
+                throw new Exception("нет пробелам и пустате") :
+                emailAdress;
             Name = String.IsNullOrWhiteSpace(name) ?
-                throw new Exception("Нельзя вставлять пробелы или пустые значения!") : name;
+            throw new Exception("нет пробелам и пустате") :
+            name;
         }
         public string EmailAdress { get; set; }
         public string Name { get; set; }
